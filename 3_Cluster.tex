@@ -1,0 +1,639 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=2cm,lmargin=2.5cm,rmargin=2.5cm,headheight=1cm,headsep=1cm,footskip=1.5cm}
+\setlength{\parindent}{0bp}
+\usepackage{babel}
+\usepackage{float}
+\usepackage{setspace}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+\usepackage{breakurl}
+
+%%%%%%%%%% Easily edit these definitions:
+\def\LabNumber{III}
+\def\year{2013}
+%%%%%%%%%%
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\ba{\begin{eqnarray}}
+\def\ea{\end{eqnarray}}
+\newcommand{\Msun}{\ensuremath{M_{\odot}}}
+\newcommand{\Msunspace}{\ensuremath{M_{\odot}\;}}
+\newcommand{\Lsun}{\ensuremath{L_{\odot}}}
+\newcommand{\Lsunspace}{\ensuremath{L_{\odot}\;}}
+\newcommand{\tsun}{\ensuremath{t_{\odot}}}
+\newcommand{\tsunspace}{\ensuremath{t_{\odot}\;}}
+\newcommand{\dsun}{\ensuremath{d_{\odot}}}
+\newcommand{\msun}{\ensuremath{m_{\odot}}}
+\newcommand{\degree}{\ensuremath{^{\circ}}}
+
+\hypersetup{pdftitle={Lab Exercise \LabNumber: Star Clusters and Galactic Nebulae},
+ pdfauthor={Michael Lam},
+ pdfsubject={Astronomy 1103}}
+
+
+
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\begin{document}
+\begin{table}[H]
+\begin{doublespace}
+\begin{centering}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{centering}
+\end{doublespace}
+
+\centering{}%
+\begin{tabular}{lclc}
+ &  &  & \tabularnewline
+Name: & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ & Partner(s): & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\tabularnewline
+ &  &  & \tabularnewline
+Net ID: &  & Date: & \tabularnewline
+\end{tabular}
+\end{table}
+
+
+\vspace{0.15in}
+
+
+\begin{center}
+{\LARGE{Lab Exercise \LabNumber: Star Clusters \& Galactic Nebulae}}\medskip{}
+
+\par\end{center}
+
+
+\section*{Purpose}
+
+In this lab, you will be introduced to star clusters, nebulae, and interstellar material in the Milky Way. You will first use the computers to study the H-R diagrams of clusters in order to determine their distances and ages. Then you will be introduced to the way the sky appears in astronomical photography. You will examine two fields of the Palomar Sky Survey to look for different kinds of galactic nebulae and to see how absorbing dust and gas blocks our view of the Milky Way.
+
+\section*{Introduction}
+
+In the lab on the \textbf{"Colors and Spectra of Stars,"} you became acquainted with the relationship between a star's color, its temperature and its spectral classification, and with the use of the H-R diagram as a tool for identifying the different stellar types. In practice, it is easier to measure a star's color by determining its apparent magnitude in several wavelength bands, than it is to determine its spectral type, so that the color-magnitude version of the H-R diagram is more commonly used than the spectral class-magnitude version when a large number of stars must be included. You also saw that the mass varies along the Main Sequence, so that for the Main Sequence stars anyway, luminosity, mass, radius, and temperature all decrease as you go from blue (O,B) to red (K,M). 
+
+\medskip{}
+
+Theoretical models of stellar evolution can predict the color index and absolute magnitude of a star of a given mass during its lifetime on the \textit{Main Sequence} and beyond. A star remains on the Main Sequence for a relatively long time in a state of stability; other phases in a star's lifetime are more rapid. We will not be concerned with the very rapid early stages of a star's life, before it reaches the Main Sequence. Rather, we'll refer to the color-magnitude Main Sequence established by the theoretical models as the \textbf{ZERO-AGE MAIN SEQUENCE} or \textbf{ZAMS}. A time scale can be associated with the ZAMS, this "age" is the length of time a star of a given mass will remain in its stable Main Sequence phase before it evolves off the ZAMS.
+
+\medskip{}
+
+We can determine this time scale based on the amount of fuel a star has and the rate at which it burns its fuel (mass). For Main Sequence stars, we have:
+\ba
+\frac{L}{\Lsun} = \left(\frac{M}{\Msun}\right)^{3.5}\nonumber
+\ea
+Recall that the luminosity (power output) is its usable energy divided by how long it can burn that energy, which is given by
+\ba
+L = \frac{E}{t} \sim \frac{M}{t},\nonumber
+\ea
+where the tilde indicates that only some portion of the mass at the core of the star is actually usable. This means that the age of a star, in terms of the approximate lifetime of the Sun, will be
+\ba
+\frac{t}{\tsun} = \frac{M/\Msun}{L/\Lsun} = \frac{M/\Msun}{(M/\Msun)^{3.5}} = \frac{1}{(M/\Msun)^{2.5}}\nonumber
+\ea
+or,
+\ba
+t = \left(\frac{M}{\Msun}\right)^{-2.5} \times (10^{10} \mathrm{\;yr}) = 10 \left(\frac{M}{\Msun}\right)^{-2.5} \mathrm{Gyr}\nonumber
+\ea
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+Observationally, we can measure neither the mass nor the luminosity of a star directly. We can observe the \textit{flux} (brightness) of a star and if we know the distance, we can determine the luminosity by the following:
+\ba
+F = \frac{L}{4\pi d^2}\nonumber
+\ea
+
+Historically, astronomers have measured fluxes logarithmically with units called \textit{magnitudes} because of the logarithmic response of the eye. We later determined that for every five magnitudes, the difference in brightness was a factor of 100. Thus,
+\ba
+\frac{F_1}{F_2} = 100^{(m_2-m_1)/5} = 10^{(m_2-m_1)/2.5}\nonumber
+\ea
+
+You can see that every difference of $m_2 - m_1$ of 5 will yield factors of 100 in the ratio of the fluxes. If we want to connect these observational magnitudes with luminosities, we can put the previous two equations together:
+\ba
+\frac{F_1}{F_2} & = & \frac{L_1 / (4\pi d_1^2)}{L_2 / (4\pi d_2^2)}\nonumber\\
+& = & \frac{L_1}{L_2} \left(\frac{d_2}{d_1}\right)^2 = 10^{(m_2-m_1)/2.5}\nonumber
+\ea
+
+It is often useful to compare a star to that of the Sun, so that the equation reduces to:
+\ba
+\frac{L_*}{\Lsun} = \left(\frac{d_*}{\dsun}\right)^2 10^{(\msun-m_*)/2.5}\nonumber
+\ea
+
+Now you can connect all of the equations.
+
+\medskip{}
+
+\textbf{Answer Question 1.1 and 1.2 on your Worksheet}
+
+\medskip{}
+
+Start the Cluster program. Your TA will help you familiarize yourself with it.
+
+\section*{Part I: The Distances and Ages of Star Clusters}
+
+The program begins with a color-magnitude H-R diagram of the evolution of stars off the Main Sequence. Each line shows a theoretical cluster of stars. Stars will spend most of their lifetimes on the Main Sequence. As stars evolve off the Main Sequence, dependent on their masses, they move to other parts of the color-magnitude H-R diagram. By determining where the turnoff occurs for a cluster, we can figure out the age of a cluster.
+
+\medskip{}
+
+\subsection*{The Open Cluster - M67}
+
+Let's start by selecting the M67 mode. M67 is an open (or galactic) cluster of several hundred stars. Notice how many of the stars have evolved off the Main Sequence forming a Red Giant Branch and even a Horizontal Branch. By locating where the Sun would lie on this diagram, you can determine the apparent magnitude the Sun would have if it were located at the distance of M67. Then, since we know the Sun's absolute visual magnitude is $M_V=+4.83$, you can determine the distance to M67 by the usual formula, written to apply to magnitudes measured in the visual wavelength band:
+\ba
+M_\mathrm{V} = m_\mathrm{v} + 5 - 5 \log d\nonumber
+\ea
+where $d$ is the distance in parsecs.
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+Move the cursor to locate the Sun at (V - I) = 4.83 - 4.08 = +0.75, where you think the Main Sequence is. V - I is a \textit{color index}, where V is the magnitude in the visual band (segment) of the spectrum and I is the magnitude in the red-to-near-IR. This notation is sometimes confusing as it may not be apparent if it is absolute or apparent, but color index is constant regardless of the distance to the object, making it a useful measure. If you need to, use the zoom rectangle button (denoted by a magnifying glass) to find the corresponding apparent magnitude, then use the above formula to calculate the distance. Hitting the home button returns the graph to its original state. When hovering over the graph, the values of the cursor are reported underneath the it. \vspace{0.1in}
+
+Now overplot a Zero Age Main Sequence and shift the magnitude down so that the stars on ZAMS line up with those still on the Main Sequence. By figuring out the apparent magnitude of stars on the ZAMS as compared with their absolute magnitudes, determined both theoretically and from observations, you can easily estimate the distance to the cluster as well. Once you have the distance to the cluster, you can estimate the age of the cluster from the Main Sequence turnoff point. The turnoff is where last stars have been evolving off the Main Sequence. Thus, they have nearly completed their hydrogen-burning lifetimes, i.e. you can tell how long they have been burning. If all of the stars were created at the same time, then this gives a good estimate of the age of the entire cluster.
+
+\medskip{}
+
+\textbf{Answer Question 1.3 to 1.4a on your Worksheet}
+
+\medskip{}
+
+
+Check out what you've just done: taken observations of color and magnitude, in the form of a diagram, and deduced the distance and age of a cluster!
+
+\subsection*{The Pleiades Cluster - M45}
+
+We can use the same method to determine the distance and age of the famous Pleiades Cluster (M45). Notice how different the color-magnitude diagram of the Pleiades is compared with that of M67. Using the ZAMS comparison method, repeat your calculations for the Pleiades Cluster.
+
+\medskip{}
+
+
+\subsection*{The Globular Cluster -  M5}
+
+M5 contains many more stars than M67 or the Pleiades and the measurements are available for several hundred of them. The H-R diagram looks quite different from those of the open clusters. Repeat the procedure as above.
+
+\medskip{}
+
+\textbf{Answer Question 1.4b on your Worksheet}
+
+\medskip{}
+
+A more accurate method of distance determination is done using cluster variable stars. This is often done with RR Lyrae or Cepheid variable stars, named after their prototype stars. They occupy a narrow strip in the color-magnitude plane and have a special relationship between the period of the brightness changes, caused by the stars pulsating, and their luminosities. Select the Cepheid mode in the program. You will see real observations of the brightness of a Cepheid II variable star in the M5 cluster as a function of time, known as a \textit{lightcurve}. Use the zoom rectangle button to view portions of the plot more closely. Once you have the period, you can use the following period-magnitude relation for Cepheid II stars (Matsunaga et al. 2006),
+\ba
+M_V = -1.64 \log_{10}(P) + 0.048,\nonumber
+\ea
+
+to determine the absolute magnitude of the star. Using the mean apparent magnitude of the star, you can use the distance modulus to calculate the distance to M5.\vspace{0.1in}
+
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+Here's one method of obtaining the period of the star. Zoom in on the middle segment and try to get a rough estimate of the period based on the time difference between the groupings of points, as you might expect each grouping to represent parts of the same pulsation. You can get a better estimate of the period by taking the third/last groupings of points around day 1100 and determining the time between the two maxima. Since they are at almost exactly the same magnitude, you might conclude them to be the star at the same part of its pulsation but some integer number of periods later. Using your previous estimate, guess how many periods apart the two maxima must be. You can then refine your previous estimate of the period by carefully measuring the time difference between the maxima and dividing it by the integer number of periods. When you think you have the period, plug the number into the Cepheid Period Estimate box, which will fold the data based on the period you provide it. If the period is close, you should see a smooth and continuous lightcurve.
+
+\medskip{}
+
+\textbf{Answer Question 1.5 on your Worksheet}
+
+\medskip{}
+
+This is the end of the first part of the lab. At this point, you can terminate the computer program and start on the second part of the lab. Be sure that you answer all the questions in Part 1 before you terminate the program. Let your trusty T.A. know when you are ready to begin Part 2.
+
+
+
+\section*{Part II: Dust and Gas in the Milky Way}
+
+No introduction to astronomy would be complete without some exposure to the technical capabilities of some of the most valuable instruments used in modern astronomy, the large optical telescopes. A telescope like the 12'' refractor at Fuertes Observatory is adequate for casual observing, but would be useless in an attempt to gain detailed information about some faint, distant astronomical object. Telescopes can be thought of as ``light buckets,'' collecting the photons emitted by faint stars and galaxies. Since the number of photons emitted by a distant object that actually strike the Earth is very small, we have to try to maximize the collecting area of the telescope (i.e. the bucket has to be big). The largest optical telescopes currently feasible to build are about 10 meters in diameter. Unfortunately, large telescopes are very expensive and very difficult to build. Observing time on the large telescopes is very precious and the allocation of time follows a procedure of stiff competition amongst the astronomers wishing to make observations.
+
+\medskip{}
+
+During the 1950's, a survey of most of the sky was made with the 48-inch Schmidt telescope at the Palomar Observatory southeast of Los Angeles. The purpose of this survey was to photograph the sky with the large telescope and to provide print reproductions of the survey to the astronomical community for examination. The plates from this survey are an important research tool today, and only now, nearly thirty years later, are astronomers again resurveying the sky. The second Palomar Sky survey will probably not be completed until sometime in a couple of years.
+
+\medskip{}
+
+The Palomar Sky Survey was made with the 48-inch Schmidt telescope on Mt. Palomar. You might wonder why the famous 200-inch was not used. The reason was mainly economic. The field of view of the Schmidt photographs is six degrees by six degrees (about the size of the bowl of the Big Dipper). The survey required exposures of two plates for each of over 3000 fields. With the additional complications of bad weather, unfavorable positions of the Moon and other problems, the survey of the sky visible at Mt. Palomar with the 48-inch telescope was a full time job for several years. The 200-inch telescope has a field of view 1000 times smaller, and so a similar survey made with that telescope would have taken decades to complete.
+
+\medskip{}
+
+The original survey was made on glass plates just about the same size as the prints here. In order to correctly focus all parts of the field of view, the thin glass plates were slightly bent during the exposure. Needless to say, the observer had to be very careful about loading the plates into the plate holders and during the development process. (Some of us know from experience how fragile the plates are!) Photographs provide a means of recording a tremendous amount of information. Glass plates are still used for some astronomical purposes today (they cost about \$35 a piece), but more and more sophisticated detectors are being developed.
+
+\medskip{}
+
+On the prints, the sky appears white and the stars are black. This reproductive process was used because the negative images have improved contrast over the positive. Stars appear as black dots with brighter ones being larger rather than darker.
+
+\medskip{}
+
+\textbf{Answer Question 2.1 on your Worksheet}
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+The four prints that you have available to you actually cover two adjacent regions of the plane of the Milky Way in the constellation Cygnus. For each of the fields, two plates are given: one, designated the ``0'' plate, contained a photographic emulsion sensitive to BLUE light, and the other, designated the ``E'' plate, was RED sensitive. Also provided are transparent overlays for each of the prints; the overlays are used by astronomers to locate quickly any catalogued object on the photograph. While examining the print, you may wish to study the information on the transparent overlay also. It will reveal some features, such as small galaxy clusters, that are not immediately obvious. Attached to this write-up is a chart showing the location of these areas on maps of the sky.
+
+\medskip{}
+
+Examination of the plates makes it clear that interstellar space is not empty. The interstellar medium is generally divided into two components: dust and gas. The dusty component consists of solid grains about one ten-thousandth of a millimeter in size. The grains tend to absorb and scatter light, obscuring whatever lies behind them. This is the cause of the dark rift on the plates where only a few foreground stars can be seen. The gas, on the other hand, is generally transparent, like the gas in the Earth's atmosphere. However, when the gas is heated by a bright hot star, it emits radiation at discrete wavelengths, just as in the low pressure lamps used in the spectroscopy lab. Since the most common gas in the universe is hydrogen, most of the emission is in the deep red spectral line characteristic of hydrogen (H-$\alpha$ emission, $\lambda$ = 6563 \r{A}). Such a glowing cloud of gas is called an EMISSION Nebula.
+
+\medskip{}
+
+Dust, and to a lesser extent gas, also preferentially scatters BLUE light over red. This is why the sky is blue and sunsets are red. REFLECTION nebulae are dust clouds which scatter (reflect) blue light from nearby stars. Recall that dust clouds are usually opaque. If it weren't for the nearby stars illuminating them, reflection nebulae would appear as dark dust clouds, obscuring the stars behind them. If a star lies behind obscuring dust, the star will appear redder (just like the sun and sunset), since the blue light from the star will be scattered out of the line of sight.
+
+\medskip{}
+
+From the previous discussion, it should be clear why the Sky Survey prints were taken on both the blue and red sensitive plates. It should be possible to distinguish between the two by looking for the prominent emission nebulae which are more conspicuous on the RED plate.
+
+\medskip{}
+
+The plate numbers in the upper left hand corner are the following: 1099-0, 1099-E. The number indicates the location of the field (to the original observers). The letter gives the color. An easy way to remember which is which: O is for O-stars which are hot and BLUE; E is for EMISSION nebulae in which the hydrogen emission is RED.
+
+\medskip{}
+
+Take a look at the two plates of the region $+48\degree$, 20h 24m. This region is centered on the Cygnus-X X-ray source.
+
+\medskip{}
+
+\textbf{Answer Questions 2.2 to 2.13 on your Worksheet.}
+
+\medskip{}
+
+
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+\vspace{-0.2in}
+
+\section*{Exercise I: The Distance and Ages of Star Clusters}
+\begin{enumerate}
+\item 
+\begin{enumerate}
+\item How long will a star ten times more massive than the Sun live on the Main Sequence? How long will a star on tenth the mass of the Sun live?\vspace{0.1in}
+
+Age of $M=10 \Msun$ star \rule[-2bp]{0.2\columnwidth}{0.5pt} Gyr\vspace{0.1in}
+
+Age of $M=0.1 \Msun$ star \rule[-2bp]{0.2\columnwidth}{0.5pt} Gyr\vspace{0.1in}
+
+
+\item Why are massive Main Sequence stars brighter than less massive Main Sequence stars?\vspace{0.2in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\item A difference of a factor of 125 in brightness is a difference of how many magnitudes?\vspace{0.1in}
+
+Number of magnitudes \rule[-2bp]{0.2\columnwidth}{0.5pt}\vspace{0.1in}
+
+\end{enumerate}
+
+\item Let's figure out some of the constants for the Sun.
+
+\begin{enumerate}
+
+\item Determine the value of $\dsun$, the Earth-Sun distance (i.e. 1 AU) in parsecs. This will be useful in upcoming calculations.\vspace{0.1in}
+
+$\dsun = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc\vspace{0.1in}
+
+\item Determine the value of $\msun$, the apparent magnitude of the Sun, given its distance and that as a G2 V star it has an absolute visual magnitude V = +4.83.\vspace{0.1in}
+
+$\msun = $ \rule[-2bp]{0.2\columnwidth}{0.5pt}\vspace{0.1in}
+
+\end{enumerate}
+
+\item Calculate the distance and age of M67. Remember that the Sun has an absolute visual magnitude V = +4.83 and a color index of (V - I) = +0.75. 
+
+\begin{enumerate}
+\item Based on the graph, what is the apparent visual magnitude a G2 V star like the Sun would have in M67?\vspace{0.1in}
+
+$m_V=$ \rule[-2bp]{0.2\columnwidth}{0.5pt}\vspace{0.1in}
+
+\item Using the distance modulus, what is the distance such a star would have? Express your answer in parsecs.\vspace{0.1in}
+
+$d = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.1in}
+
+\item Now that you know the distance to the cluster, you can determine the age of the cluster by the Main Sequence turnoff. Estimate the visual magnitude of the turnoff stars.\vspace{0.1in}
+
+$m_V=$ \rule[-2bp]{0.2\columnwidth}{0.5pt}\vspace{0.1in}
+
+\item Using all of the information you have calculated, determine the luminosity of the turnoff stars in terms of the luminosity of the Sun.\vspace{0.1in}
+
+$L_V=$ \rule[-2bp]{0.2\columnwidth}{0.5pt} $\Lsun$\vspace{0.1in}
+
+\item Now calculate the mass of these stars in solar masses.\vspace{0.1in}
+
+$M=$ \rule[-2bp]{0.2\columnwidth}{0.5pt} $\Msun$\vspace{0.1in}
+
+\item Finally, calculate the age of the cluster in Gigayears.\vspace{0.1in}
+
+$t=$ \rule[-2bp]{0.2\columnwidth}{0.5pt} Gyr\vspace{0.1in}
+
+
+
+
+
+%Move through the program until "ZAMS" appears on the top right of the screen. The Sun, a G2 V star, has an absolute visual magnitude V = +4.83 and a color index (b -- v) = +0.65. Using the ZAMS and its associated age scale, estimate the length of time the Sun will spend on the Main Sequence before it begins to evolve off to become a red giant.
+
+%    a) Age of G2 star on the ZAMS ___________ years.
+
+%    b) How old is the Sun now? ___________________________
+
+%    c) Why does a star leave the Main Sequence?
+
+
+
+\end{enumerate}
+
+
+\item
+\begin{enumerate}
+
+\item Overplot a ZAMS on the M67 graph. Using the difference in magnitudes, calculate the distance to M67. Is your measurement improved or worse compared to previously? \vspace{0.1in}
+
+$d = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.2in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.1in}
+
+
+\item Repeat the calculations using the space below to the side using the ZAMS for the Pleiades (M42) and M5. Determine the distance and age to both clusters. \vspace{0.1in}
+
+M42:
+
+$d = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.1in}
+
+$t = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} Gyr \vspace{0.1in}
+
+M5:
+
+$d = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.1in}
+
+$t = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} Gyr \vspace{0.1in}
+
+\vspace{0.25in}
+
+
+\end{enumerate}
+
+
+\item We will now measure the distance to M5 using a Cepheid variable star.
+
+\begin{enumerate}
+\item What is the period of the Cepheid star?\vspace{0.1in}
+
+$P = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} days \vspace{0.1in}
+
+\item Using the period-magnitude relation, what is the absolute magnitude of the star?\vspace{0.1in}
+
+$M_V = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} \vspace{0.1in}
+
+\item Using the mean apparent magnitude from the graph and the absolute magnitude, determine the distance to M5.\vspace{0.1in}
+
+$d = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.1in}
+
+\item By plugging in different values into the Cepheid Period Estimate box, can you estimate the approximate error you have on your measurement in units of days?\vspace{0.1in}
+
+$\Delta P = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} days \vspace{0.1in}
+
+\item Using the low and high ranges of the period ($P\pm\Delta P$), can you repeat your calculations to determine the ranges in the absolute magnitude (remember this scale is inverted!), and thus the ranges in the distance? How good is this measurement?\vspace{0.1in}
+
+\centering{}%
+\begin{tabular}{llll}
+ &  &  & \tabularnewline
+Low: & $P_{\mathrm{low}} = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} days & High: & $P_{\mathrm{high}} = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} days\tabularnewline
+& & & \tabularnewline
+& $M_{V,\mathrm{low}} = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} &  & $M_{V,\mathrm{high}} = $ \rule[-2bp]{0.2\columnwidth}{0.5pt}\tabularnewline
+& & & \tabularnewline
+& $d_{\mathrm{low}} = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc & & $d_{\mathrm{high}} = $ \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \tabularnewline
+\end{tabular}\vspace{0.3in}
+
+
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.1in}
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+\vspace{-0.2in}
+
+
+\section*{Exercise II: Dust and Gas in the Milky Way}
+\begin{enumerate}
+\item The Schmidt telescope can detect stars down to an apparent magnitude of +21. On a clear night, you can just about see a candle flame 10 kilometers away: an apparent magnitude of +6. Considering that every difference of 5 magnitudes corresponds to a factor of 100 in luminosity, how far away can the Schmidt detect a candle flame? (Hint: remember the inverse square law).\vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\item Compare the red and blue prints. Identify three bright stars which are visible on both prints. Do they appear brighter on the red or the blue plate? Record the star numbers from the transparent overlay.\vspace{0.1in}
+
+Star \# \rule[-2bp]{0.2\columnwidth}{0.5pt} is brighter on the \rule[-2bp]{0.2\columnwidth}{0.5pt} plate. \vspace{0.1in}
+
+Star \# \rule[-2bp]{0.2\columnwidth}{0.5pt} is brighter on the \rule[-2bp]{0.2\columnwidth}{0.5pt} plate. \vspace{0.1in}
+
+Star \# \rule[-2bp]{0.2\columnwidth}{0.5pt} is brighter on the \rule[-2bp]{0.2\columnwidth}{0.5pt} plate. \vspace{0.1in}
+
+Which of the three stars is the hottest? Explain your answer. \vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\item Compare the number of very faint stars appearing in the same small region of both the blue and the red plates. The corners of the plates are handiest for this comparison. Which plate detects the most stars? \vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\item Discuss whether you believe this effect is seen because there are more red stars than blue stars. (Hints: Which stars are the most luminous and are thus visible to greater distances? Stars of which color live the longest and are thus the most numerous? What about red giants?) \vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+
+
+
+
+\item How does the scattering of light by interstellar dust affect this comparison? (Hint: remember that blue light is scattered most effectively by the dust.) \vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\pagebreak{}
+
+
+
+\item Note that some of the faint nebulosities seen on the blue plate correspond to very strong emission nebulae on the red plate. Although most of the emission from hydrogen gas is from the red light of the H-alpha line, the green and blue lines of hydrogen as well as those of other elements can be excited. Suggest another reason why these obvious emission nebulae appear on the blue plate. (Hint: think again about the scattering of blue light by dust). \vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+
+
+
+\item Look at the red plate. Notice the finely structured filamentary nebula occupying the lower right hand quadrant of the plate. \vspace{0.1in}
+\begin{enumerate}
+\item Measure the thinnest width of the filament in millimeters. \vspace{0.1in}
+
+Width of the filament \rule[-2bp]{0.2\columnwidth}{0.5pt} mm \vspace{0.1in}
+
+\item One millimeter measured on the plate corresponds to an angular distance of 67 seconds of arc (or 1.12 minutes of arc) on the sky. \vspace{0.1in}
+
+Angular width of the filament \rule[-2bp]{0.2\columnwidth}{0.5pt} arcmin \vspace{0.1in}
+
+\item One arcminute equals 0.0003 radians. The angle subtended by an object of length L at a distance d is given by
+\ba
+\theta = \frac{L}{d} \nonumber
+\ea
+
+where $\theta$ is measured in radians and L and d have the same units. If the emission nebula is one kiloparsec away, estimate the thinnest width of the filament in parsecs.\vspace{0.1in}
+
+Linear size of the widest filament \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.1in}
+
+\end{enumerate}
+
+\item Use the same method to measure the greatest length of the uninterrupted filament in parsecs. \vspace{0.1in}
+
+\hspace{0.325in}Linear size of the longest filament \rule[-2bp]{0.2\columnwidth}{0.5pt} pc \vspace{0.1in}
+
+\item A planetary nebula, seen as a small circular region about 3 mm in diameter in the center of the lower half plate (near 47\degree, 20h 30m), is clearly visible on the red plate. Can you see it on the blue? What class of nebula is a planetary nebula, emission or reflection? Explain your reasoning.\vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\pagebreak{}
+
+\item Now take a look at the other two plates (O-754 and E-754), centered also in Cygnus, a bit to the south. The rift in the Milky Way shows up best on these plates. The brightest star, also on the edge of the previous pair of prints, is Deneb, which is one of the brightest stars in the galaxy. Deneb is 1,600 light years distant and is classified as a super giant.\vspace{0.1in}
+
+On the eastern (left) edge of the print is the Pelican Nebula (do you see a pelican?).\vspace{0.1in}
+
+Since the emission regions around stars are usually expanding, the younger ones are more compact and therefore have higher surface brightness (i.e. appear darker) than the older ones. Using this standard, locate the youngest emission region on this plate and sketch its location on the following diagram (box covers full plate):\vspace{0.1in}
+
+\framebox{\parbox[c][5in][c]{0.75\paperwidth}{$\;$}}
+
+\pagebreak{}
+
+\item The dust clouds that give structure to the emission nebula usually diffuse with age, resulting in less distinct patterns. Where is the oldest nebula, according to this criterion? \vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+Sketch here:\vspace{0.1in}\\
+\framebox{\parbox[c][5in][c]{0.75\paperwidth}{$\;$}}
+
+
+\item How does the distance to the nebula affect the validity of this standard (i.e. does the apparent distinctness depend on distance)?\vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\item Examine the obscuring dust cloud in the lower right hand corner of the red plate (obscuring the center of a bright emission nebula in fact), and the dust cloud on the left side of the print 1/3 of the way from the bottom. Which cloud is farther away from the sun? Assume that stars are uniformly scattered throughout the galaxy and that the dust clouds block out all the stars which lie behind them. Explain your reasoning.\vspace{0.1in}
+
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}\vspace{0.2in}
+\rule[0.5pt]{0.75\paperwidth}{0.3pt}
+
+\end{enumerate}
+
+
+\pagebreak{}
+
+\begin{doublespace}
+\begin{center}
+\uline{Lab \LabNumber ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fall \year ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Astro 1103 - Nature of the Universe}
+\par\end{center}
+\end{doublespace}
+
+\vspace{-0.2in}
+
+
+\section*{Glossary}
+\begin{enumerate}
+
+\item \textbf{magnitude -} A logarithmic measure of the brightness of an object. Can be measured in an absolute sense or an apparent sense and for different portions of the electromagnetic spectrum.
+
+\item \textbf{flux -} The amount of power output per unit area. While luminosity is constant, flux is dependent on the distance.
+
+\item \textbf{parsec -} Unit of distance equal to $3.09 \times 10^{16}$ m.
+
+\item \textbf{Main Sequence -} The subset of hydrogen-burning stars. The pattern on an H-R diagram that hydrogen-burning stars of different mass forms a line called this.
+
+\item \textbf{Color Index -} A measure of the ``color'' of a star, made by subtracting magnitudes in two different bands. This measure does not depend on distance.
+
+\item \textbf{Lightcurve -} A graph of the changes of brightness of an object (sometimes in total luminosity) as a function of time.
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+\end{document}

@@ -4,6 +4,4 @@ Cornell astronomy lab on determining stellar cluster properties. Using color-mag
 
 ![alt text](cluster.png "GUI")
 
-![alt text](Screenshot2.png "Fit Screenshot")
-
 The laboratory worksheet for the Spring 2014 teaching of Astro 1103 (Nature of the Universe) is available [here](3_Cluster.pdf) along with the LaTeX source code so that you can modify at will. 
